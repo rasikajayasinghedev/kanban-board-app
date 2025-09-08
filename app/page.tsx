@@ -1,18 +1,50 @@
 'use client';
 
+import React, { useEffect, useState } from 'react';
 import { Sidebar } from "@/components/Sidebar";
 import { Header } from "@/components/Header";
 import { KanbanBoard } from "@/components/KanbanBoard";
 
 
 export default function Home() {
+   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+   useEffect(()=>{
+    const handleResize = () => {
+      // Tailwind's 'lg' breakpoint is 1024px
+      if (window.innerWidth < 1024) {
+        setIsSidebarOpen(false);
+      } else {
+        setIsSidebarOpen(true);
+      }
+    };
+    window.addEventListener('resize', handleResize);
+    handleResize(); // Initial check
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+
+   },[])
+
   return (
-    <div className="flex h-screen bg-white">
-      <Sidebar/>
-      <div className="flex-1 flex flex-col overflow-hidden">
-        <Header />
-        <main className="flex-1 overflow-x-hidden overflow-y-auto bg-gray-50 p-4 md:p-6 lg:p-8">
-          <KanbanBoard/>
+   <div className="flex flex-col h-screen bg-white overflow-hidden">
+      <Header sidebarToggle={() => setIsSidebarOpen(!isSidebarOpen)} />
+      <div className="flex flex-1 overflow-hidden relative">
+        <Sidebar isOpen={isSidebarOpen} />
+        
+        {/* Overlay for mobile/tablet view when sidebar is open */}
+        {isSidebarOpen && (
+          <div 
+            onClick={() => setIsSidebarOpen(false)} 
+            className="fixed inset-0 bg-black bg-opacity-50 z-20 lg:hidden"
+            aria-hidden="true"
+          ></div>
+        )}
+
+        <main className="flex-1 overflow-y-auto bg-gray-50 p-4 md:p-6 lg:p-8">
+  
+          <KanbanBoard />
         </main>
       </div>
     </div>

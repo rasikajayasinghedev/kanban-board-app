@@ -4,6 +4,22 @@ type IconProps = {
   className?: string;
 };
 
+export const BoardAppLogoIcon: React.FC<IconProps> = ({ className }) => (
+    <svg className={className} viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M26 44.2265L3.9282 31.363C2.4082 30.472 2.4082 28.2545 3.9282 27.3635L26 14.5L48.0718 27.3635C49.5918 28.2545 49.5918 30.472 48.0718 31.363L26 44.2265Z" stroke="#9CA3AF" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M26 36.2265L3.9282 23.363C2.4082 22.472 2.4082 20.2545 3.9282 19.3635L26 6.5L48.0718 19.3635C49.5918 20.2545 49.5918 22.472 48.0718 23.363L26 36.2265Z" stroke="#374151" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M26 28.2265L3.9282 15.363C2.4082 14.472 2.4082 12.2545 3.9282 11.3635L26 1.5L48.0718 11.3635C49.5918 12.2545 49.5918 14.472 48.0718 15.363L26 28.2265Z" fill="#3B82F6"/>
+    </svg>
+);
+
+export const ImageIcon: React.FC<IconProps> = ({ className }) => (
+    <svg className={className} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" strokeWidth="2"/>
+        <circle cx="8.5" cy="8.5" r="1.5" fill="currentColor"/>
+        <path d="M21 15l-5-5L5 21" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+    </svg>
+);
+
 export const GridIcon: React.FC<IconProps> = ({ className }) => (
   <svg className={className} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M10 3H3V10H10V3Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -153,4 +169,10 @@ export const XIcon: React.FC<IconProps> = ({ className }) => (
         <path d="M18 6L6 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
         <path d="M6 6L18 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
+);
+
+export const ChevronUpIcon: React.FC<IconProps> = ({ className }) => (
+  <svg className={className} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 15L12 9L6 15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+  </svg>
 );
