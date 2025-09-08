@@ -1,11 +1,21 @@
+'use client';
+
+import { Sidebar } from "@/components/Sidebar";
+import { Header } from "@/components/Header";
+import { KanbanBoard } from "@/components/KanbanBoard";
+
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="flex justify-center">
-          welcome kanban board app
-        </p>
+    <div className="flex h-screen bg-white">
+      <Sidebar/>
+      <div className="flex-1 flex flex-col overflow-hidden">
+        <Header />
+        <main className="flex-1 overflow-x-hidden overflow-y-auto bg-gray-50 p-4 md:p-6 lg:p-8">
+          <KanbanBoard/>
+        </main>
       </div>
-    </main>
+
+    </div>
   );
 }
