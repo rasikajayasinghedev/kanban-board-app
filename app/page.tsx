@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { Sidebar } from "@/components/Sidebar";
 import { Header } from "@/components/Header";
 import { KanbanBoard } from "@/components/KanbanBoard";
+import { BoardHeader } from '@/components/BoardHeader';
 
 
 export default function Home() {
@@ -42,9 +43,12 @@ export default function Home() {
           ></div>
         )}
 
-        <main className="flex-1 overflow-y-auto bg-gray-50 p-4 md:p-6 lg:p-8">
-  
-          <KanbanBoard />
+        <main className="flex-1 overflow-y-auto bg-gray-50">
+          <BoardHeader />
+          <div className='p-4 md:p-6 lg:p-8'>
+            <KanbanBoard />
+          </div>
+          
         </main>
       </div>
     </div>
