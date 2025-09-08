@@ -1,0 +1,5 @@
+{
+  "name": "Kanban Board App",
+  "description": "A responsive Kanban-style task management board built with React, TypeScript, and Tailwind CSS. Features drag-and-drop functionality and state management with Zustand.",
+  "requestFramePermissions": []
+}
