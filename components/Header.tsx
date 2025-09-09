@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTaskStore } from '../store/taskStore';
 import { BoardAppLogoIcon, SearchIcon, FilterIcon, MenuIcon, BellIcon, PlusIcon, ImageIcon } from './icons';
 
 
@@ -7,6 +8,9 @@ interface HeaderProps {
 }
 
 export const Header: React.FC<HeaderProps> = ({ sidebarToggle }) => {
+  const searchTerm = useTaskStore((state) => state.searchTerm);
+  const setSearchTerm = useTaskStore((state) => state.setSearchTerm);
+
   return (
     <header className="flex-shrink-0 bg-white border-b border-gray-200">
       <div className="flex items-center justify-between h-16 px-4 md:px-6">
@@ -33,8 +37,8 @@ export const Header: React.FC<HeaderProps> = ({ sidebarToggle }) => {
             <input
               type="text"
               placeholder="Search tasks..."
-              value={""}
-              onChange={(e) => ("")}
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
               className="w-full py-2 pl-10 pr-4 text-sm text-gray-900 bg-gray-100 border border-transparent rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white"
             />
           </div>
