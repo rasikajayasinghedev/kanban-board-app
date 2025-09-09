@@ -4,19 +4,26 @@ type IconProps = {
   className?: string;
 };
 
+export const BoardIcon: React.FC<IconProps> = ({ className }) => (
+  <svg className={className} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M4 8.5C4 7.67157 4.67157 7 5.5 7H18.5C19.3284 7 20 7.67157 20 8.5V18.5C20 19.3284 19.3284 20 18.5 20H5.5C4.67157 20 4 19.3284 4 18.5V8.5Z" fill="#3B82F6"/>
+    <path d="M8.5 4C7.67157 4 7 4.67157 7 5.5V7H17V5.5C17 4.67157 16.3284 4 15.5 4H8.5Z" fill="#A5B4FC"/>
+  </svg>
+);
+
 export const BoardAppLogoIcon: React.FC<IconProps> = ({ className }) => (
-    <svg className={className} viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M26 44.2265L3.9282 31.363C2.4082 30.472 2.4082 28.2545 3.9282 27.3635L26 14.5L48.0718 27.3635C49.5918 28.2545 49.5918 30.472 48.0718 31.363L26 44.2265Z" stroke="#9CA3AF" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-      <path d="M26 36.2265L3.9282 23.363C2.4082 22.472 2.4082 20.2545 3.9282 19.3635L26 6.5L48.0718 19.3635C49.5918 20.2545 49.5918 22.472 48.0718 23.363L26 36.2265Z" stroke="#374151" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-      <path d="M26 28.2265L3.9282 15.363C2.4082 14.472 2.4082 12.2545 3.9282 11.3635L26 1.5L48.0718 11.3635C49.5918 12.2545 49.5918 14.472 48.0718 15.363L26 28.2265Z" fill="#3B82F6"/>
+    <svg className={className} viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="6" y="12" width="20" height="16" rx="5" fill="#9CA3AF"/>
+        <rect x="6" y="8" width="20" height="16" rx="5" fill="white" stroke="#374151" strokeWidth="2"/>
+        <rect x="6" y="4" width="20" height="16" rx="5" fill="#3B82F6"/>
     </svg>
 );
 
 export const ImageIcon: React.FC<IconProps> = ({ className }) => (
     <svg className={className} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" strokeWidth="2"/>
-        <circle cx="8.5" cy="8.5" r="1.5" fill="currentColor"/>
-        <path d="M21 15l-5-5L5 21" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M21.3,4.7a1.5,1.5,0,0,0-2.12,0L4.7,19.18a1.5,1.5,0,0,0,0,2.12,1.5,1.5,0,0,0,2.12,0L21.3,6.82a1.5,1.5,0,0,0,0-2.12Z" fill="currentColor"/>
+        <path d="M6.18,3.2a1.5,1.5,0,0,0-2.12,0,1.5,1.5,0,0,0,0,2.12L18.54,19.8a1.5,1.5,0,0,0,2.12,0,1.5,1.5,0,0,0,0-2.12Z" fill="currentColor"/>
+        <circle cx="6" cy="18" r="3" fill="currentColor"/>
     </svg>
 );
 
@@ -101,15 +108,16 @@ export const PlusIcon: React.FC<IconProps> = ({ className }) => (
 
 export const MoreHorizontalIcon: React.FC<IconProps> = ({ className }) => (
     <svg className={className} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="12" cy="12" r="1" fill="currentColor" stroke="currentColor" strokeWidth="1"/>
-        <circle cx="19" cy="12" r="1" fill="currentColor" stroke="currentColor" strokeWidth="1"/>
-        <circle cx="5" cy="12" r="1" fill="currentColor" stroke="currentColor" strokeWidth="1"/>
+        <circle cx="12" cy="12" r="1.5" fill="currentColor"/>
+        <circle cx="19" cy="12" r="1.5" fill="currentColor"/>
+        <circle cx="5" cy="12" r="1.5" fill="currentColor"/>
     </svg>
 );
 
 export const AttachmentIcon: React.FC<IconProps> = ({ className }) => (
     <svg className={className} width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M21.44 11.05L12.39 20.1C11.1 21.39 9.36 22.06 7.55 22.06C5.74 22.06 4 21.39 2.71 20.1C0.15 17.54 0.15 13.56 2.71 11L11.76 1.95C12.76 0.95 14.22 0.5 15.77 0.5C17.32 0.5 18.78 0.95 19.78 1.95C21.78 3.95 21.78 7.15 19.78 9.15L10.73 18.2C10.23 18.7 9.5 19 8.75 19C7.25 19 7 17.75 7 17.75C7 17.25 7.23 16.5 7.73 16L15.43 8.3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.72" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.72-1.72" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
 );
 
@@ -137,6 +145,12 @@ export const BellIcon: React.FC<IconProps> = ({ className }) => (
 export const PencilIcon: React.FC<IconProps> = ({ className }) => (
     <svg className={className} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M17 3C17.2626 2.73735 17.5744 2.52901 17.9176 2.38687C18.2608 2.24473 18.628 2.17157 19 2.17157C19.372 2.17157 19.7392 2.24473 20.0824 2.38687C20.4256 2.52901 20.7374 2.73735 21 3C21.2626 3.26265 21.471 3.57444 21.6131 3.9176C21.7553 4.26077 21.8284 4.62799 21.8284 5C21.8284 5.37201 21.7553 5.73923 21.6131 6.0824C21.471 6.42556 21.2626 6.73735 21 7L7.5 20.5L2 22L3.5 16.5L17 3Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+    </svg>
+);
+
+export const LightningIcon: React.FC<IconProps> = ({ className }) => (
+    <svg className={className} width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" fill="currentColor" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
 );
 
