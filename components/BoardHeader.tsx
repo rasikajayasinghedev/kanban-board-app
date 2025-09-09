@@ -11,7 +11,7 @@ export const BoardHeader: React.FC = () => {
     const moreAssigneesCount = 2;
 
     return (
-        <div className="bg-white mb-6">
+        <div className="bg-white">
             <div className="p-4 sm:p-5">
                 <div className="flex flex-row items-start justify-between gap-4">
                     {/* Left side: Title, status, and subtitle */}

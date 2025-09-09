@@ -5,10 +5,16 @@ import { Sidebar } from "@/components/Sidebar";
 import { Header } from "@/components/Header";
 import { KanbanBoard } from "@/components/KanbanBoard";
 import { BoardHeader } from '@/components/BoardHeader';
+import { useTaskStore } from '@/store/taskStore';
 
 
 export default function Home() {
+   const fetchTasks = useTaskStore((state) => state.fetchTasks);
    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+    useEffect(() => {
+    fetchTasks();
+  }, [fetchTasks]);
 
    useEffect(()=>{
     const handleResize = () => {

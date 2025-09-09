@@ -53,7 +53,7 @@ export const Sidebar: React.FC<SidebarProps> = ({isOpen}) => {
                 <div className="flex items-center justify-between cursor-pointer">
                     <div className="flex items-center">
                         <div className="flex items-center justify-center h-10 w-10 bg-gray-800 rounded-full">
-                            <ImageIcon className="w-5 h-5 text-white" />
+                             <ImageIcon className="w-5 h-5 text-white" />
                         </div>
                         <div className="ml-3">
                             <p className="text-xs text-gray-500">workspace</p>

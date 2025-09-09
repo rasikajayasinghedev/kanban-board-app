@@ -20,10 +20,9 @@ export const BoardAppLogoIcon: React.FC<IconProps> = ({ className }) => (
 );
 
 export const ImageIcon: React.FC<IconProps> = ({ className }) => (
-    <svg className={className} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M21.3,4.7a1.5,1.5,0,0,0-2.12,0L4.7,19.18a1.5,1.5,0,0,0,0,2.12,1.5,1.5,0,0,0,2.12,0L21.3,6.82a1.5,1.5,0,0,0,0-2.12Z" fill="currentColor"/>
-        <path d="M6.18,3.2a1.5,1.5,0,0,0-2.12,0,1.5,1.5,0,0,0,0,2.12L18.54,19.8a1.5,1.5,0,0,0,2.12,0,1.5,1.5,0,0,0,0-2.12Z" fill="currentColor"/>
-        <circle cx="6" cy="18" r="3" fill="currentColor"/>
+    <svg className={className} width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
+        <path d="M18 9h-2v2h-2V9h-2V7h2V5h2v2h2v2z"/>
     </svg>
 );
 
