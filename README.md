@@ -40,3 +40,5 @@ A **Swimlane Dashboard** built with **Next.js**, featuring drag-and-drop tasks, 
 ```bash
 git clone https://github.com/your-username/kanban-board-app.git
 cd kanban-board-app
+npm install
+npm run dev
