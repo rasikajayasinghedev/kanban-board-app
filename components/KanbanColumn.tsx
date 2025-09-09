@@ -37,7 +37,7 @@ export const KanbanColumn: React.FC<KanbanColumnProps> =  ({ status, tasks }) =>
         onDragOver={handleDragOver}
         onDragLeave={handleDragLeave}
         onDrop={handleDrop}
-        className={`flex-shrink-0 w-80 rounded-lg transition-all duration-300 ${isDraggingOver ? 'bg-blue-50 border-2 border-dashed border-blue-400' : 'bg-gray-100 border-2 border-transparent'}`}
+        className={`flex-shrink-0 w-80 transition-all duration-300 ${isDraggingOver ? 'bg-blue-50 border-2 border-dashed border-blue-400' : 'bg-gray-100 border-2 border-transparent'}`}
       >
           <div className="p-4">
               <div className="flex items-center justify-between pb-4 border-b border-gray-200">
