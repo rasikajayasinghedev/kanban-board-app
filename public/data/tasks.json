@@ -1,0 +1,314 @@
+[
+  {
+    "id": "task-1",
+    "category": "Research",
+    "title": "User interview",
+    "description": "Conduct user interviews for product research",
+    "priority": "Medium",
+    "commentsCount": 2,
+    "attachmentsCount": 2,
+    "dueDate": "Due: Tomorrow",
+    "assignees": [
+      {
+        "id": "user1",
+        "avatarUrl": "https://i.pravatar.cc/32?u=user1",
+        "name": "John Doe"
+      }
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "task-2",
+    "category": "Design",
+    "title": "Design System",
+    "description": "Create comprehensive design system documentation",
+    "priority": "High",
+    "commentsCount": 8,
+    "attachmentsCount": 3,
+    "assignees": [
+      {
+        "id": "user2",
+        "avatarUrl": "https://i.pravatar.cc/32?u=user2",
+        "name": "Jane Smith"
+      },
+      {
+        "id": "user3",
+        "avatarUrl": "https://i.pravatar.cc/32?u=user3",
+        "name": "Mike Johnson"
+      }
+    ],
+    "status": "todo",
+    "reports": 2
+  },
+  {
+    "id": "task-3",
+    "category": "Other",
+    "title": "Speech",
+    "description": "Prepare presentation for quarterly review",
+    "priority": "Low",
+    "commentsCount": 3,
+    "attachmentsCount": 1,
+    "dueDate": "Due: September 18, 2024",
+    "assignees": [
+      {
+        "id": "user4",
+        "avatarUrl": "https://i.pravatar.cc/32?u=user4",
+        "name": "Sarah Wilson"
+      }
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "task-4",
+    "category": "Design",
+    "title": "Wireframe",
+    "description": "Create wireframes for mobile application",
+    "priority": "Medium",
+    "commentsCount": 0,
+    "attachmentsCount": 0,
+    "dueDate": "Due: September 22, 2024",
+    "assignees": [
+      {
+        "id": "user5",
+        "avatarUrl": "https://i.pravatar.cc/32?u=user5",
+        "name": "Alex Brown"
+      }
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "task-5",
+    "category": "Design",
+    "title": "UI Design",
+    "description": "Design user interface for new features",
+    "priority": "High",
+    "commentsCount": 2,
+    "attachmentsCount": 2,
+    "dueDate": "Due: Tomorrow",
+    "assignees": [
+      {
+        "id": "user6",
+        "avatarUrl": "https://i.pravatar.cc/32?u=user6",
+        "name": "Emma Davis"
+      },
+      {
+        "id": "user7",
+        "avatarUrl": "https://i.pravatar.cc/32?u=user7",
+        "name": "Tom Anderson"
+      }
+    ],
+    "status": "inprogress"
+  },
+  {
+    "id": "task-6",
+    "category": "Feedback",
+    "title": "Check Clients Feedback",
+    "description": "Review and analyze client feedback from beta testing",
+    "priority": "Medium",
+    "commentsCount": 0,
+    "attachmentsCount": 8,
+    "dueDate": "Due: 22 April, 2022",
+    "image": "https://picsum.photos/seed/task6/300/200",
+    "assignees": [
+      {
+        "id": "user8",
+        "avatarUrl": "https://i.pravatar.cc/32?u=user8",
+        "name": "Lisa White"
+      }
+    ],
+    "status": "inprogress"
+  },
+  {
+    "id": "task-7",
+    "category": "Presentation",
+    "title": "Copyright",
+    "description": "Handle copyright and legal documentation",
+    "priority": "Low",
+    "commentsCount": 0,
+    "attachmentsCount": 4,
+    "dueDate": "Due: 22 April, 2022",
+    "image": "https://picsum.photos/seed/task7/300/200",
+    "assignees": [
+      {
+        "id": "user9",
+        "avatarUrl": "https://i.pravatar.cc/32?u=user9",
+        "name": "David Lee"
+      }
+    ],
+    "status": "inprogress"
+  },
+  {
+    "id": "task-8",
+    "category": "UX Research",
+    "title": "Filter sorting",
+    "description": "Implement advanced filtering and sorting features",
+    "priority": "Medium",
+    "commentsCount": 0,
+    "attachmentsCount": 0,
+    "dueDate": "Due: September 30, 2024",
+    "assignees": [
+      {
+        "id": "user10",
+        "avatarUrl": "https://i.pravatar.cc/32?u=user10",
+        "name": "Rachel Green"
+      },
+      {
+        "id": "user11",
+        "avatarUrl": "https://i.pravatar.cc/32?u=user11",
+        "name": "Chris Taylor"
+      }
+    ],
+    "status": "inprogress"
+  },
+  {
+    "id": "task-9",
+    "category": "UX Research",
+    "title": "Sorting category",
+    "description": "Research and implement category sorting functionality",
+    "priority": "High",
+    "commentsCount": 9,
+    "attachmentsCount": 4,
+    "dueDate": "Due: October 2, 2024",
+    "assignees": [
+      {
+        "id": "user12",
+        "avatarUrl": "https://i.pravatar.cc/32?u=user12",
+        "name": "Kevin Miller"
+      }
+    ],
+    "status": "inprogress"
+  },
+  {
+    "id": "task-10",
+    "category": "Research",
+    "title": "Prototype",
+    "description": "Create functional prototype for user testing",
+    "priority": "High",
+    "commentsCount": 243,
+    "attachmentsCount": 35,
+    "dueDate": "Due: September 12, 2024",
+    "assignees": [
+      {
+        "id": "user13",
+        "avatarUrl": "https://i.pravatar.cc/32?u=user13",
+        "name": "Sophie Clark"
+      }
+    ],
+    "status": "approved"
+  },
+  {
+    "id": "task-11",
+    "category": "Design",
+    "title": "Detail Page",
+    "description": "Design detailed view pages for products",
+    "priority": "Medium",
+    "commentsCount": 28,
+    "attachmentsCount": 6,
+    "dueDate": "Due: September 14, 2024",
+    "assignees": [
+      {
+        "id": "user14",
+        "avatarUrl": "https://i.pravatar.cc/32?u=user14",
+        "name": "Ryan Parker"
+      }
+    ],
+    "status": "approved"
+  },
+  {
+    "id": "task-12",
+    "category": "Interface",
+    "title": "Animation preloaders",
+    "description": "Design and implement loading animations",
+    "priority": "Low",
+    "commentsCount": 9,
+    "attachmentsCount": 4,
+    "dueDate": "Due: September 10, 2024",
+    "assignees": [
+      {
+        "id": "user15",
+        "avatarUrl": "https://i.pravatar.cc/32?u=user15",
+        "name": "Megan Fox"
+      }
+    ],
+    "status": "approved"
+  },
+  {
+    "id": "task-13",
+    "category": "Other",
+    "title": "Group Management",
+    "description": "Implement group management functionality",
+    "priority": "Medium",
+    "commentsCount": 329,
+    "attachmentsCount": 0,
+    "dueDate": "Due: September 17, 2024",
+    "assignees": [
+      {
+        "id": "user16",
+        "avatarUrl": "https://i.pravatar.cc/32?u=user16",
+        "name": "James Wilson"
+      }
+    ],
+    "status": "reject"
+  },
+  {
+    "id": "task-14",
+    "category": "Design",
+    "title": "Design System",
+    "description": "Revise design system based on feedback",
+    "priority": "High",
+    "commentsCount": 8,
+    "attachmentsCount": 3,
+    "image": "https://picsum.photos/seed/task14/300/200",
+    "assignees": [
+      {
+        "id": "user17",
+        "avatarUrl": "https://i.pravatar.cc/32?u=user17",
+        "name": "Nicole Brown"
+      }
+    ],
+    "status": "reject",
+    "reports": 2
+  },
+  {
+    "id": "task-15",
+    "category": "Interface",
+    "title": "Slider controls",
+    "description": "Implement custom slider controls",
+    "priority": "Low",
+    "commentsCount": 31,
+    "attachmentsCount": 8,
+    "dueDate": "Due: September 21, 2024",
+    "assignees": [
+      {
+        "id": "user18",
+        "avatarUrl": "https://i.pravatar.cc/32?u=user18",
+        "name": "Mark Davis"
+      },
+      {
+        "id": "user19",
+        "avatarUrl": "https://i.pravatar.cc/32?u=user19",
+        "name": "Laura Johnson"
+      }
+    ],
+    "status": "reject"
+  },
+  {
+    "id": "task-16",
+    "category": "Design",
+    "title": "Slider controls",
+    "description": "Design improved slider control interface",
+    "priority": "Medium",
+    "commentsCount": 0,
+    "attachmentsCount": 6,
+    "dueDate": "Due: September 23, 2024",
+    "image": "https://picsum.photos/seed/task16/300/200",
+    "assignees": [
+      {
+        "id": "user20",
+        "avatarUrl": "https://i.pravatar.cc/32?u=user20",
+        "name": "Andrew Miller"
+      }
+    ],
+    "status": "reject"
+  }
+]
